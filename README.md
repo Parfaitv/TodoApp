@@ -4,3 +4,4 @@
 2. `cd TodoApp`
 3. `npm i`
 4. `npm run start`
+4. `npm run start`

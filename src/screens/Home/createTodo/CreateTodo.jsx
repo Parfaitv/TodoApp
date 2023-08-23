@@ -5,6 +5,7 @@ const CreateTodo = ({setTodos}) => {
     const [title, setTitle] = useState('');
 
     const addTodo = title => {
+      if(title.trim().length){
         setTodos(prev => [
           {
             _id: uuidv4(),
@@ -15,6 +16,7 @@ const CreateTodo = ({setTodos}) => {
         ])
         setTitle('')
       }
+    }
 
   return (
     <div className='flex items-center justify-between mb-5 rounded-2xl border-gray-800 border-2 px-5 py-3 w-full mt-20'>
